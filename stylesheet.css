@@ -1,0 +1,178 @@
+:root {
+    background-color: rgb(222, 222, 167);
+    font-family: sans-serif;
+  }
+
+#body{
+    background-color: rgb(242, 182, 160);
+    
+    
+}
+
+
+#intro{
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.timeline{
+    max-width: 1200px;
+    position: relative;
+    margin: 100px auto;
+}
+
+.conta {
+    padding: 10px 50px;
+    width: 50%;
+}
+
+
+.text-box{
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.left-container{
+    left: 0;
+}
+.right-container{
+    left: 50%;
+}
+
+.conta img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 99999;
+}
+.right-container img{
+    left: -20px;
+}
+
+
+
+
+.conta:nth-child(1){
+    animation-delay: 0s;
+}
+
+.conta:nth-child(2){
+    animation-delay: 2s;
+}
+.conta:nth-child(3){
+    animation-delay: 4s;
+}
+.conta:nth-child(4){
+    animation-delay: 6s;
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    right: -15px;
+
+}
+
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid white;
+    left: -15px;
+
+}
+
+
+
+.card{
+    box-shadow: inset;
+}
+
+#intro{
+    border-bottom: bisque;
+
+}
+#education{
+    background-color: rgb(222, 222, 167);
+}
+.navbar-container {
+    position: fixed;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(-100%);
+    filter: blur(5px);
+
+    
+}
+ 
+.show{
+    opacity: 1;
+    filter:blur(0);
+    transform: translateX(0);
+}
+  
+@media (min-width: 992px) {
+    .offcanvas-lg {
+      display: none;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+
+    .timeline{
+        margin: 50px auto;
+    }
+    .timeline::after{
+        left:31px;
+    }
+    .conta{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .text-box{
+        font-size: 13px;
+    }
+    .text-box small{
+        margin-bottom: 10px;
+    }
+    .right-container{
+        left: 0;
+    }
+    
+    .left-container img, .right-container img{
+        left: 10px
+    }
+
+    .left-container-arrow, .right-container-arrow{
+        border-right: 15px solit #fff;
+        border-left: 0;
+        left: 15px;
+    }
+
+    
+}
+  
